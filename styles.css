@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+  }
+  
+  #navbar {
+    height: 10vh;
+    width: 100%;
+    background-color: #BE3144;
+    position: fixed;
+  }
+  
+  .float {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .none {
+    list-style: none;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    padding-right: 25px;
+    letter-spacing: 2px;
+  }
+  
+  .first {
+    text-decoration: none;
+  }
+  
+  #welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    height: 100vh;
+    line-height: 1;
+  }
+  
+  .different {
+    font-family: Raleway, sans-serif;
+    font-size: 57.6px;
+  }
+  
+  .same {
+    font-size: 28.8px;
+    color: #BE3144;
+    text-align: center;
+    margin-top: -35px;
+    font-style: italic;
+    font-weight: 200px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #45567d;
+  }
+  
+  .wide {
+    font-size: 40px;
+    font-family: Raleway, sans-serif;
+    color: #FFF;
+  }
+  
+  .try {
+    border: 1.5px solid #FFF;
+    margin-top: 2px;
+  }
+  
+  #image {
+    border: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+   
+  #profile-link {
+    width: 30%;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .project-tile {
+    background-color: #303841;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    margin-top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 5px;
+  }
+  
+  .code {
+    color: #303841;
+    transition: #303841 0.3s ease-out;
+  }
+  
+  .project-tile:hover .code {
+    color: #ff7f50;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #45567d;
+  }
+  
+  .show {
+    background-color: #303841;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 18.56px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin: 40px;
+  }
+  
+  .show:hover {
+    background-color: #be3144;
+  }
+  
+  .profile {
+    background-color: #303841;
+    display: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #F0F0F0;
+  }
+  
+  .block {
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+  }
+  
+  .profile > p {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: -65px;
+  }
+  
+  .italic {
+    margin-top: 100px;
+  }
+  
+  /*@keyframes slide {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }*/
+  
+  
+  .social {
+    text-decoration: none;
+    color: #F0F0F0;
+    font-size: 20px;
+    font: Poppins, sans-serif;
+    padding: 10px 20px;
+    /*animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;*/
+  }
+  
+  .pink {
+    border: 2px solid #be3144;
+    margin-top: 90px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    gap: 25px;
+  }
+  
+  .line {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  
+  /* For smaller screen devices) */
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .different {
+      font-size: 40px;
+    }
+  
+    .project-tile {
+      height: 50px;
+    }
+  
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #image {
+    width: 100%;
+  }
+  
+  #profile-link {
+    width: 70%;
+    text-decoration: none;
+  }
+  
+  .profile {
+    height: 200;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 14px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #image {
+    width: 100%;
+  }
+  
+  #profile-link {
+    width: 70%;
+    text-decoration: none;
+  }
+  
+  .profile {
+    height: 200;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 14px;
+    justify-content: center;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .float {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .block {
+    font-size: 50px;
+  }
+  }
